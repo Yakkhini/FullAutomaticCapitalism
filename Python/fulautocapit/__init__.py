@@ -7,7 +7,7 @@ client = Spot()
 # Get server timestamp
 print(client.time())
 # Get klines of BTCUSDT at 1m interval
-print(client.klines("BTCUSDT", "1m"))
+print(client.klines("ETHUSDT", "1m"))
 # Get last 10 klines of BNBUSDT at 1h interval
 print(client.klines("BNBUSDT", "1h", limit=10))
 
