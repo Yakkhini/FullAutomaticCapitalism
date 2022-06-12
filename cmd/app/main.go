@@ -1,12 +1,15 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 
-    "fultocapital/internal"
+	"fultocapital/internal/pull"
 )
 
 func main() {
-    fmt.Println("Hello, World!")
-    fmt.Println(morestrings.ReverseRunes("!oG ,olleH"))
+	fmt.Println("Hello, World!")
+
+	// print market response
+	data := pull.Pull()
+    fmt.Println(data)
 }

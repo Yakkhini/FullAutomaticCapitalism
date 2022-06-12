@@ -54,12 +54,12 @@
 
 ## 技术选型
 
-本交易策略计划运行于币安交易所的合约市场（Binance Future）。币安提供了 [一系列 Restful Api](https://binance-docs.github.io/apidocs/spot/cn) 来进行交易操作。
+本交易策略计划运行于币安交易所的合约市场（Binance Future）。币安提供了 [一系列 RESTful API](https://binance-docs.github.io/apidocs/spot/cn) 来进行交易操作。
 
 面向网络编程，同时为了保证运行性能，所以本量化程序选用 [Golang](https://go.dev/) 开发。
 
 ### 环境搭建
 
-本程序使用的 Golang 版本是 1.18。为了逐步更新到 Golang 2.0 版本，Go 在 1.10 后的更新中逐渐变迁、增加新特性。在 1.18 版本更新了泛型功能与工作区功能。目前 Golang 已经不建议使用 `GOPATH` 处理全部依赖，而是推荐使用 `module` 功能。使用 `mosule` 功能最好更改项目组织模式至符合比较主流的标准，如 `src/` 文件目录目前就不推荐使用了。我将目前（2022.06.11）Golang 开发环境搭建的简易过程写了一篇短文记录：
+本程序使用的 Golang 版本是 1.18。为了逐步更新到 Golang 2.0 版本，Go 在 1.10 后的更新中逐渐变迁、增加新特性。在 1.18 版本更新了泛型功能与工作区功能。目前 Golang 已经不建议使用 `GOPATH` 处理全部依赖，而是推荐使用 `module` 功能。使用 `module` 功能最好更改项目组织模式至符合比较主流的标准，如 `src/` 文件目录目前就不推荐使用了。我将目前（2022.06.11）Golang 开发环境搭建的简易过程写了一篇短文记录：
 
 [Go 语言开发环境](https://yechanv.vercel.app/#/coding/20220611-golang_setup)
