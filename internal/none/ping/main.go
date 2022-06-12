@@ -1,8 +1,8 @@
-package time
+// ping server
+package getping
 
 import "github.com/yakkhini/fultocapital/internal/pkg/pull"
 
-// get server time.
-func Getservertime() string {
+func Getping() string {
 	return pull.Pull("/fapi/v1/time")
 }

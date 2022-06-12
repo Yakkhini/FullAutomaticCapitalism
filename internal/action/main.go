@@ -3,10 +3,10 @@ package action
 
 import (
 	"fmt"
-	"github.com/yakkhini/fultocapital/internal/time"
+	"github.com/yakkhini/fultocapital/internal/none/time"
 )
 
 func Action() {
-	data := time.Getservertime()
+	data := gettime.Getservertime()
 	fmt.Println(data)
 }

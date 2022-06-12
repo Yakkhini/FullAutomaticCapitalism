@@ -8,10 +8,10 @@ import (
 )
 
 func Pull(api string) string {
-	res, err := http.Get("https://testnet.binancefuture.com" + api)
+	resp, err := http.Get("https://testnet.binancefuture.com" + api)
 	checkError(err)
 
-	data, err := ioutil.ReadAll(res.Body)
+	data, err := ioutil.ReadAll(resp.Body)
 	checkError(err)
 
 	return string(data)
