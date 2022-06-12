@@ -7,8 +7,8 @@ import (
 	"net/http"
 )
 
-func Pull() string {
-	res, err := http.Get("https://api.binance.com/api/v3/time")
+func Pull(api string) string {
+	res, err := http.Get("https://testnet.binancefuture.com" + api)
 	checkError(err)
 
 	data, err := ioutil.ReadAll(res.Body)

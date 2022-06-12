@@ -3,13 +3,11 @@ package main
 import (
 	"fmt"
 
-	"fultocapital/internal/pull"
+	"github.com/yakkhini/fultocapital/internal/action"
 )
 
 func main() {
 	fmt.Println("Hello, World!")
 
-	// print market response
-	data := pull.Pull()
-    fmt.Println(data)
+	action.Action()
 }
